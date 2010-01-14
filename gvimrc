@@ -1,3 +1,6 @@
+" ~ /.gvimrc
+" Niko Kivelä <niko tovrleaf com>
+
 " Colorscheme
 colorscheme darkblue
 

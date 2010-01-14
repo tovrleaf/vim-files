@@ -1,3 +1,6 @@
+" ~/.vim/config/mappings.vim
+" Niko Kivelä <niko tovrleaf com>
+
 " Navigation
 " Navigate tabs like vimperator
 noremap <silent> <C-n> :tabnext<CR>

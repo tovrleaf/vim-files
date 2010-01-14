@@ -1,4 +1,4 @@
-" config.vim
+" ~/.vim/config/config.vim
 " Niko Kivelä <niko tovrleaf com>
 
 " Basic settings
