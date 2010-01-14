@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git clone git://github.com/tovrleaf/vim-files ~/.vim-git
+
+echo source ~/.vim-git/vimrc.vim >> ~/.vimrc
+echo source ~/.vim-git/gvimrc.vim >> ~/.gvimrc
