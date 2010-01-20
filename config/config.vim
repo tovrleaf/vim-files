@@ -1,7 +1,3 @@
-" ~/.vim/config/config.vim
-" Niko Kivelä <niko tovrleaf com>
-
-" Basic settings
 syntax on
 filetype on
 filetype indent off
@@ -55,7 +51,7 @@ set wildmenu                    " Enchanced ed commands completion
 set wildmode=longest,list:full  " Helps wildmenu auto-completion
 
 " Unprintable characters and whitespaces
-set list listchars=tab:>-,trail:.
+set listchars=tab:⏤⇢,trail:⇢
 set list
 set complete=.,w,b,u
 
@@ -75,4 +71,4 @@ set wrapscan        " Wrap search around EOF
 let c_comment_strings=1 " Highlight strings inside C comments
 
 " Mappings
-source ~/.vim/config/mappings.vim
+source ~/.vim-git/config/mappings.vim
