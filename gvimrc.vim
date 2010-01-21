@@ -5,7 +5,7 @@
 colorscheme darkblue
 
 " Config
-source ~/.vim/config/config.vim
+source ~/.vim-git/config/config.vim
 
 " Cursor
 set cursorline
