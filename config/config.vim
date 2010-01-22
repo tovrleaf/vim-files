@@ -7,6 +7,7 @@ filetype plugin indent off
 set nocompatible    " Don't make vim behave like vi
 set noinsertmode    " Start in command mode
 set showmode        " Display mode (INSERT/REPLACE/etc.)
+set showmatch       " Automatically show matching brackets
 set matchtime=2     " Show matching parents after .2 seconds, no .5sec noinsertmode
 set nonumber        " Do not show linenumbers
 set ruler
@@ -68,7 +69,9 @@ set iskeyword+=_    " No underscore as word delimiter, helps locating variables
 set wrapscan        " Wrap search around EOF
 
 " Misc
+set binary noeol        " Do not put carriage return to EOL
 let c_comment_strings=1 " Highlight strings inside C comments
+set visualbell          " Set visualbell instead of beeping
 
 " Mappings
 source ~/.vim-git/config/mappings.vim
