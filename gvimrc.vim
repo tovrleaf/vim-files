@@ -15,9 +15,7 @@ set guicursor=a:blinkon1000
 " Gui
 set guitablabel=%N.\ %t
 set showtabline=2
-set guioptions-=T
-set guioptions-=F
-set guioptions-=m
-set guioptions+=a
+set guioptions-=m     " No menubar present
+set guioptions-=a     " No autoselect
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)
 set winminheight=0
