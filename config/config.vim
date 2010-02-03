@@ -1,3 +1,6 @@
+" ~/.vim/config/config.vim
+" Niko Kivelä <niko tovrleaf com>
+
 syntax on
 filetype on
 filetype indent off
@@ -26,13 +29,13 @@ endif
 
 " Tab management and indenting
 set autoindent      " Auto ident what I've indented myself
-set nocindent       " Turn off c indenting
 set expandtab       " Insert spaces whenever tab key is pressed
+set nocindent       " Turn off c indenting
 set laststatus=2    " Have status line always
 set nosmartindent   " Do not auto indent when starting newline
 set nosmarttab      " Let me do the indenting
 set shiftwidth=2    " Set the number of spaces inserted for indentation
-set softtabstop=2   " Number of columns vim uses when tab is pressed
+set softtabstop=0   " Number of columns vim uses when tab is pressed
 set tabstop=2       " How many columns tab counts for
 set textwidth=0     " Disable maximum width of text that can be inserted
 set showtabline=0   " No page labels
@@ -69,7 +72,6 @@ set iskeyword+=_    " No underscore as word delimiter, helps locating variables
 set wrapscan        " Wrap search around EOF
 
 " Misc
-set binary noeol        " Do not put carriage return to EOL
 let c_comment_strings=1 " Highlight strings inside C comments
 set visualbell          " Set visualbell instead of beeping
 
