@@ -3,8 +3,10 @@
 
 syntax on
 filetype on
-filetype indent off
-filetype plugin indent off
+"filetype indent off
+"filetype plugin indent off
+filetype indent on
+filetype plugin indent on
 
 " General settings
 set nocompatible    " Don't make vim behave like vi
@@ -70,6 +72,8 @@ set incsearch       " Start searching right away
 set noignorecase    " Do not ignorecase when searching pattern
 set iskeyword+=_    " No underscore as word delimiter, helps locating variables
 set wrapscan        " Wrap search around EOF
+" Hilight anything over 120 characters
+match Todo '\%120v.*'
 
 " Misc
 let c_comment_strings=1 " Highlight strings inside C comments
@@ -77,3 +81,5 @@ set visualbell          " Set visualbell instead of beeping
 
 " Mappings
 source ~/.vim-git/config/mappings.vim
+" Aliases
+source ~/.vim-git/config/aliases.vim
