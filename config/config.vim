@@ -3,8 +3,10 @@
 
 syntax on
 filetype on
-filetype indent off
-filetype plugin indent off
+"filetype indent off
+"filetype plugin indent off
+filetype indent on
+filetype plugin indent on
 
 " General settings
 set nocompatible    " Don't make vim behave like vi
@@ -106,6 +108,9 @@ set wrapmargin=75
 " Make scrolling faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+
+" Hilight anything over 120 characters
+match Todo '\%120v.*'
 
 " Misc
 set history=1000        " Store lots of :cmdline history

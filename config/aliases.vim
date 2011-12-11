@@ -1,4 +1,4 @@
-" ~/.vim/config/mappings.vim
+e ~/.vim/config/mappings.vim
 " Niko Kivelä <niko tovrleaf com>
 
 " like retab but removes whitespace isntead of replacing tabs
