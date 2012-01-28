@@ -34,7 +34,7 @@ if filereadable(expand("$HOME/.vim/colors/molokai.vim"))
     highlight Normal guifg=#c0c0c0
   endif
 else
-  colorscheme darkblue
+  "colorscheme darkblue
 endif
 
 " Status line
@@ -57,6 +57,12 @@ set tabstop=4       " How many columns tab counts for
 set textwidth=0     " Disable maximum width of text that can be inserted
 set showtabline=0   " No page labelso
 
+" Foldingl settings
+set foldmethod=indent   " fold based on indent
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " dont fold by default
+set foldlevel=1         " this is just what i use
+
 " Temp files
 set swapfile        " Use swapfile for buffer. Useful for recovering file after network outage.
 set nobackup
@@ -74,8 +80,11 @@ set fileformat=unix
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=80
-
+if has('colocolumn')
+    set colorcolumn=80
+endif
+" Hilight anything over 120 characters
+"match Todo '\%120v.*'
 
 " Autocompletion behaviour
 set wildmenu                    " Enchanced ed commands completion
@@ -108,9 +117,6 @@ set wrapmargin=75
 " Make scrolling faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-" Hilight anything over 120 characters
-match Todo '\%120v.*'
 
 " Misc
 set history=1000        " Store lots of :cmdline history
