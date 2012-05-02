@@ -1,12 +1,16 @@
 " ~/.vim/config/config.vim
 " Niko Kivelä <niko tovrleaf com>
 
+" Backspace over autoindent, line breaks and start of insert mode
+set backspace=indent,eol,start
+
 syntax on
 filetype on
 "filetype indent off
 "filetype plugin indent off
 filetype indent on
 filetype plugin indent on
+
 
 " General settings
 set nocompatible    " Don't make vim behave like vi
@@ -29,12 +33,8 @@ set rulerformat=%l/%L(%p%%),%c
 if filereadable(expand("$HOME/.vim/colors/molokai.vim"))
   "colorscheme textmate16 " http://www.vim.org/scripts/script.php?script_id=1855
   colorscheme molokai
-  if has('gui')
-    highlight Normal guibg=#000040
-    highlight Normal guifg=#c0c0c0
-  endif
 else
-  colorscheme darkblue
+  "colorscheme darkblue
 endif
 
 " Status line
@@ -55,7 +55,7 @@ set shiftwidth=4    " Set the number of spaces inserted for indentation
 set softtabstop=0   " Number of columns vim uses when tab is pressed
 set tabstop=4       " How many columns tab counts for
 set textwidth=0     " Disable maximum width of text that can be inserted
-set showtabline=0   " No page labelso
+set showtabline=1   " No page labelso
 
 " Temp files
 set swapfile        " Use swapfile for buffer. Useful for recovering file after network outage.
@@ -74,8 +74,12 @@ set fileformat=unix
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=80
+if has('colorcolumn')
+    set colorcolumn=80
+endif
 
+" Hilight anything over 120 characters
+"match Todo '\%120v.*'
 
 " Autocompletion behaviour
 set wildmenu                    " Enchanced ed commands completion
@@ -108,9 +112,6 @@ set wrapmargin=75
 " Make scrolling faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-" Hilight anything over 120 characters
-match Todo '\%120v.*'
 
 " Misc
 set history=1000        " Store lots of :cmdline history

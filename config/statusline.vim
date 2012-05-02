@@ -23,7 +23,7 @@ set statusline+=%{StatuslineCurrentHighlight()}\ \ "current highlight
 set statusline+=%c,   " Cursor column
 set statusline+=%l/%L " Cursor line/total lines
 set statusline+=\ %P  " Percent through file
-set laststatus=2
+set laststatus=1
 
 
 " Recalculate the trailing whitespace warning when idle, and after saving

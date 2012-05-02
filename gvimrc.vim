@@ -1,9 +1,6 @@
 " ~ /.gvimrc
 " Niko Kivelä <niko tovrleaf com>
 
-" Colorscheme
-colorscheme darkblue
-
 " Config
 source ~/.vim-git/config/config.vim
 
@@ -12,10 +9,15 @@ set cursorline
 highlight cursorline guibg=#000000
 set guicursor=a:blinkon1000
 
+
+"highlight Normal guibg=#000040
+"highlight Normal guifg=#c0c0c0
+set guifont=Menlo:h11
+colorscheme molokai
+
 " Gui
-set guitablabel=%N.\ %t
-set showtabline=2
 set guioptions-=m     " No menubar present
 set guioptions-=a     " No autoselect
+set guioptions-=T     " No include toolbar
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)
 set winminheight=0
