@@ -57,6 +57,12 @@ set tabstop=4       " How many columns tab counts for
 set textwidth=0     " Disable maximum width of text that can be inserted
 set showtabline=1   " No page labelso
 
+" Foldingl settings
+set foldmethod=indent   " fold based on indent
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " dont fold by default
+set foldlevel=1         " this is just what i use
+
 " Temp files
 set swapfile        " Use swapfile for buffer. Useful for recovering file after network outage.
 set nobackup
