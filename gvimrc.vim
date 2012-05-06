@@ -9,10 +9,9 @@ set cursorline
 highlight cursorline guibg=#000000
 set guicursor=a:blinkon1000
 
-
 "highlight Normal guibg=#000040
 "highlight Normal guifg=#c0c0c0
-set guifont=Menlo:h11
+set guifont=Menlo:h10
 colorscheme molokai
 
 " Gui
