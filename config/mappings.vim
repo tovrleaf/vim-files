@@ -26,9 +26,9 @@ noremap  <Right> ""
 noremap! <Right> <Esc>
 
 " ,V splits the view vertically
-nnoremap ,V :vsplit<enter>
+"nnoremap ,V :vsplit<enter>
 " ,H splits view horizontally
-nnoremap ,H :split<enter>
+"nnoremap ,H :split<enter>
 
 " Use cmd j/k to move rapidly between blocks
 nnoremap <d-j> }

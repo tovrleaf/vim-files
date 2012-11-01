@@ -86,7 +86,7 @@ set fileformat=unix
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-if has('colorcolumn')
+if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
