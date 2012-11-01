@@ -11,7 +11,6 @@ filetype on
 filetype indent on
 filetype plugin indent on
 
-
 " General settings
 set nocompatible    " Don't make vim behave like vi
 set noinsertmode    " Start in command mode
