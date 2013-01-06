@@ -18,6 +18,8 @@ set showmode        " Display mode (INSERT/REPLACE/etc.)
 set showcmd         " Show incomplete cmds down the bottom
 set showmatch       " Automatically show matching brackets
 set matchtime=2     " Show matching parents after .2 seconds, no .5sec noinsertmode
+let mapleader = ','
+
 
 "GUI
 set guifont=Menlo:h12
@@ -129,9 +131,9 @@ set history=1000        " Store lots of :cmdline history
 let c_comment_strings=1 " Highlight strings inside C comments
 set visualbell          " Set visualbell instead of beeping
 
-" Aliases
-source ~/.vim-git/config/aliases.vim
 " Mappings
 source ~/.vim-git/config/mappings.vim
 " Statusline manipulation
 source ~/.vim-git/config/statusline.vim
+" Plugins config
+source ~/.vim-git/config/plugins.vim
