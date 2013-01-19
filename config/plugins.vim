@@ -2,8 +2,8 @@
 " Niko Kivelä <niko tovrleaf com>
 
 " LustyExplorer
-nmap <silent> ll :LustyFilesystemExplorer<CR>
-nmap <silent> LL :LustyFilesystemExplorerFromHere<CR>
+nmap <silent> <leader>l :LustyFilesystemExplorer<CR>
+nmap <silent> <leader>L :LustyFilesystemExplorerFromHere<CR>
 
 " LustyJuggler
 let g:LustyJugglerShowKeys = 'a'
