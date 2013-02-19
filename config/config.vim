@@ -35,7 +35,7 @@ if filereadable(expand("$HOME/.vim/colors/molokai.vim"))
   "colorscheme textmate16 " http://www.vim.org/scripts/script.php?script_id=1855
   colorscheme molokai
 else
-  "colorscheme darkblue
+  colorscheme darkblue
 endif
 
 " Status line
