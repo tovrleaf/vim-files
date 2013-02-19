@@ -4,3 +4,6 @@ git clone git://github.com/tovrleaf/vim-files.git ~/.vim-git
 
 echo source ~/.vim-git/vimrc.vim >> ~/.vimrc
 echo source ~/.vim-git/gvimrc.vim >> ~/.gvimrc
+
+ln -s ~/.vim-git/colors ~/.vim/
+ln -s ~/.vim-git/plugins ~/.vim/
