@@ -11,7 +11,7 @@ set guicursor=a:blinkon1000
 
 "highlight Normal guibg=#000040
 "highlight Normal guifg=#c0c0c0
-set guifont=Menlo:h10
+set guifont=Menlo:h12
 colorscheme molokai
 
 " Gui
