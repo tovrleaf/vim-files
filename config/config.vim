@@ -1,13 +1,13 @@
 " ~/.vim/config/config.vim
 " Niko Kivelä <niko tovrleaf com>
 
+execute pathogen#infect()
+
 " Backspace over autoindent, line breaks and start of insert mode
 set backspace=indent,eol,start
 
 syntax on
 filetype on
-"filetype indent off
-"filetype plugin indent off
 filetype indent on
 filetype plugin indent on
 
@@ -19,7 +19,6 @@ set showcmd         " Show incomplete cmds down the bottom
 set showmatch       " Automatically show matching brackets
 set matchtime=2     " Show matching parents after .2 seconds, no .5sec noinsertmode
 let mapleader = ','
-
 
 "GUI
 set guifont=Menlo:h12
