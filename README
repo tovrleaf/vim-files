@@ -11,5 +11,13 @@ ln -s ~/.vim-git/colors ~/.vim/
 ln -s ~/.vim-git/plugin ~/.vim/
 
 cd $HOME/.vim-git/bundle
+git clone git@github.com:guns/vim-clojure-highlight.git
+
+git clone git@github.com:tpope/vim-fireplace.git
+git clone git@github.com:tpope/vim-classpath.git
+git clone git@github.com:guns/vim-clojure-static.git
+
+git clone git@github.com:kien/rainbow_parentheses.vim.git
+
 git clone git@github.com:vim-scripts/LustyExplorer.git
 git clone git@github.com:vim-scripts/LustyJuggler.git
