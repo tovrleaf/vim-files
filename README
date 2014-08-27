@@ -5,19 +5,4 @@ git clone git://github.com/tovrleaf/vim-files.git ~/.vim-git
 echo source ~/.vim-git/vimrc.vim >> ~/.vimrc
 echo source ~/.vim-git/gvimrc.vim >> ~/.gvimrc
 
-ln -s ~/.vim-git/autoload ~/.vim/
-ln -s ~/.vim-git/bundle ~/.vim/
-ln -s ~/.vim-git/colors ~/.vim/
-ln -s ~/.vim-git/plugin ~/.vim/
-
-cd $HOME/.vim-git/bundle
-git clone git@github.com:guns/vim-clojure-highlight.git
-
-git clone git@github.com:tpope/vim-fireplace.git
-git clone git@github.com:tpope/vim-classpath.git
-git clone git@github.com:guns/vim-clojure-static.git
-
-git clone git@github.com:kien/rainbow_parentheses.vim.git
-
-git clone git@github.com:vim-scripts/LustyExplorer.git
-git clone git@github.com:vim-scripts/LustyJuggler.git
+$HOME/.vim-git/bin/install.sh
