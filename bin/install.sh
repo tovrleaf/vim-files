@@ -4,13 +4,26 @@ set -eu
 
 cd $HOME
 
-for f in autoload bundle colors plugin; do
+for f in autoload \
+    bundle \
+    colors \
+    plugin \
+    ; do
     ln -s ~/.vim-git/$f ~/.vim/ 2> /dev/null || true
 done
 
 cd .vim-git/bundle
 
-for r in guns/vim-clojure-highlight tpope/vim-fireplace tpope/vim-classpath guns/vim-clojure-static kien/rainbow_parentheses.vim vim-scripts/LustyExplorer vim-scripts/LustyJuggler vim-scripts/LustyJuggler; do
+for r in \
+    guns/vim-clojure-highlight \
+    guns/vim-clojure-static \
+    kien/rainbow_parentheses.vim \
+    tpope/vim-fireplace \
+    tpope/vim-classpath \
+    vim-scripts/LustyExplorer \
+    vim-scripts/LustyJuggler \
+    vim-scripts/LustyJuggler \
+    ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
     test -d $d && pushd $d > /dev/null && git pull &&  popd > /dev/null
