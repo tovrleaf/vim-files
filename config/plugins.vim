@@ -11,4 +11,9 @@ nmap <silent> ,, :LustyJuggler<CR>
 nmap <silent> <TAB> :LustyJugglePrevious<CR>
 
 " Better Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
 nmap <silent> <leader>r :RainbowParenthesesToggleAll<CR>
