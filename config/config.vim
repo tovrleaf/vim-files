@@ -29,13 +29,7 @@ set shortmess=atI
 set rulerformat=%l/%L(%p%%),%c
 
 " Colorscheme
-" check if customcolorscheme exists, load it
-if filereadable(expand("$HOME/.vim/colors/molokai.vim"))
-  "colorscheme textmate16 " http://www.vim.org/scripts/script.php?script_id=1855
-  colorscheme molokai
-else
-  colorscheme darkblue
-endif
+colorscheme molokai
 
 " Status line
 set statusline+=%h  " Help file flag

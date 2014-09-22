@@ -19,6 +19,7 @@ for r in \
     guns/vim-clojure-static \
     kien/rainbow_parentheses.vim \
     tpope/vim-fireplace \
+    tomasr/molokai \
     tpope/vim-classpath \
     vim-scripts/LustyExplorer \
     vim-scripts/LustyJuggler \
