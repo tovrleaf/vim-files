@@ -30,6 +30,10 @@ set rulerformat=%l/%L(%p%%),%c
 
 " Colorscheme
 colorscheme molokai
+let g:molokai_original = 1
+highlight Normal guibg=#222629 ctermbg=Black
+let g:rehash256 = 1
+set cursorline
 
 " Status line
 set statusline+=%h  " Help file flag
