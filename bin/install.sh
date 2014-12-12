@@ -18,6 +18,7 @@ for r in \
     guns/vim-clojure-highlight \
     guns/vim-clojure-static \
     kien/rainbow_parentheses.vim \
+    mfukar/robotframework-vim \
     tpope/vim-fireplace \
     tomasr/molokai \
     tpope/vim-classpath \

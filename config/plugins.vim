@@ -17,3 +17,5 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 au Syntax * RainbowParenthesesLoadChevrons
 nmap <silent> <leader>r :RainbowParenthesesToggleAll<CR>
+
+" Robot framework
