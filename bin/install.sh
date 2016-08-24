@@ -15,6 +15,7 @@ done
 cd .vim-git/bundle
 
 for r in \
+    clojure-emacs/cider-nrepl \
     guns/vim-clojure-highlight \
     guns/vim-clojure-static \
     kien/rainbow_parentheses.vim \
