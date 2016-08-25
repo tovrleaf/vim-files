@@ -13,3 +13,5 @@ set softtabstop=0   " Number of columns vim uses when tab is pressed
 set tabstop=4       " How many columns tab counts for
 set textwidth=0     " Disable maximum width of text that can be inserted
 set showtabline=1   " No page labelso
+
+autocmd Filetype sh setlocal ts=2 sts=2 sw=2
