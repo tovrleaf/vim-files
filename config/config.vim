@@ -21,10 +21,11 @@ set matchtime=2     " Show matching parents after .2 seconds, no .5sec noinsertm
 let mapleader = ','
 
 "GUI
-set guifont=Menlo:h12
+set guifont=Roboto\ Mono\ Medium\ for\ Powerline:h15
 set number          " Show linenumbers
 set ruler
 set rulerformat=%l/%L(%p%%),%c
+set t_Co=256        " Use 256 colours
 set hidden          " When opening new file,
                     " unsaved changed makes current window hidden, not closed
 set shortmess=atI
@@ -35,13 +36,6 @@ let g:molokai_original = 1
 highlight Normal guibg=#222629 ctermbg=Black
 let g:rehash256 = 1
 set cursorline
-
-" Status line
-set statusline+=%h  " Help file flag
-set statusline+=%y  " Filetype
-set statusline+=%r  " Read only flag
-set statusline+=%m  " Modified flag
-set statusline=%f   " Tail of the filename
 
 " Foldingl settings
 set foldmethod=indent   " fold based on indent
@@ -106,7 +100,7 @@ set visualbell          " Set visualbell instead of beeping
 " Mappings
 source ~/.vim-git/config/mappings.vim
 " Statusline manipulation
-source ~/.vim-git/config/statusline.vim
+"source ~/.vim-git/config/statusline.vim
 " Plugins config
 source ~/.vim-git/config/plugins.vim
 " Editor config

@@ -1,6 +1,14 @@
 " ~/.vim/config/config.vim
 " Niko Kivelä <niko tovrleaf com>
 
+" Status line
+set statusline+=%h  " Help file flag
+set statusline+=%y  " Filetype
+set statusline+=%r  " Read only flag
+set statusline+=%m  " Modified flag
+set statusline=%f   " Tail of the filename
+
+
 " Display a warning if fileformat isnt unix
 set statusline+=%#warningmsg#
 set statusline+=%{&ff!='unix'?'['.&ff.']':''}

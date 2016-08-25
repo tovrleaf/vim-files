@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 cd $HOME
 
 for f in autoload \
@@ -25,11 +23,12 @@ for r in \
     tpope/vim-classpath \
     vim-scripts/LustyExplorer \
     vim-scripts/LustyJuggler \
-    vim-scripts/LustyJuggler \
+    vim-airline/vim-airline \
+    vim-airline/vim-airline-themes \
+    powerline/fonts \
     ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
     test -d $d && pushd $d > /dev/null && git pull &&  popd > /dev/null
     ! test -d $d &&  git clone git@github.com:$r.git
 done
-

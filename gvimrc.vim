@@ -9,8 +9,6 @@ set cursorline
 highlight cursorline guibg=#000000
 set guicursor=a:blinkon1000
 
-set guifont=Menlo:h14
-
 " Gui
 set guioptions-=m     " No menubar present
 set guioptions-=a     " No autoselect
