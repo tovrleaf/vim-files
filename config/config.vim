@@ -24,9 +24,10 @@ let mapleader = ','
 set guifont=Menlo:h12
 set number          " Show linenumbers
 set ruler
-set hidden
-set shortmess=atI
 set rulerformat=%l/%L(%p%%),%c
+set hidden          " When opening new file,
+                    " unsaved changed makes current window hidden, not closed
+set shortmess=atI
 
 " Colorscheme
 colorscheme molokai
@@ -42,25 +43,6 @@ set statusline+=%r  " Read only flag
 set statusline+=%m  " Modified flag
 set statusline=%f   " Tail of the filename
 
-" Tab management and indenting
-set autoindent      " Auto ident what I've indented myself
-set expandtab       " Insert spaces whenever tab key is pressed
-set cindent         " Turn off c indenting
-set laststatus=2    " Have status line always
-set smartindent     " Do not auto indent when starting newline
-set smarttab        " Let vim me do the indenting
-set shiftwidth=4    " Set the number of spaces inserted for indentation
-set softtabstop=0   " Number of columns vim uses when tab is pressed
-set tabstop=4       " How many columns tab counts for
-set textwidth=0     " Disable maximum width of text that can be inserted
-set showtabline=1   " No page labelso
-
-" Foldingl settings
-set foldmethod=indent   " fold based on indent
-set foldnestmax=10      " deepest fold is 10 levels
-set nofoldenable        " dont fold by default
-set foldlevel=1         " this is just what i use
-
 " Foldingl settings
 set foldmethod=indent   " fold based on indent
 set foldnestmax=10      " deepest fold is 10 levels
@@ -71,9 +53,6 @@ set foldlevel=1         " this is just what i use
 set swapfile        " Use swapfile for buffer. Useful for recovering file after network outage.
 set nobackup
 set nowritebackup
-" Auto-backup files and .swp files don't go to pwd
-"set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-"set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " Encodings and format
 set encoding=utf8
@@ -101,17 +80,13 @@ set list
 set complete=.,w,b,u
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Shell settings
-if $SHELL =~ 'bin/fish'
-  set shell=/bin/sh
-endif
-
 " Searhing and hilighlights
 set hlsearch        " Highlight searches
 set incsearch       " Start searching right away
 set noignorecase    " Do not ignorecase when searching pattern
 set iskeyword+=_    " No underscore as word delimiter, helps locating variables
 set wrapscan        " Wrap search around EOF
+"
 " Highlight toggle
 nmap <Leader>c :silent :nohlsearch<CR>
 
@@ -134,3 +109,5 @@ source ~/.vim-git/config/mappings.vim
 source ~/.vim-git/config/statusline.vim
 " Plugins config
 source ~/.vim-git/config/plugins.vim
+" Editor config
+source ~/.vim-git/config/editor.vim

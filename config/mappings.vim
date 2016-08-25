@@ -17,7 +17,7 @@ nnoremap <F7> :set number!<CR>
 nnoremap <Leader>h yypVr
 
 " select what was just pasted
-nnoremap ,p `[v`]
+nnoremap <Leader>p `[v`]
 
 " Disable arrow keys completely
 noremap  <Up> ""
