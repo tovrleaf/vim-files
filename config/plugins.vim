@@ -1,9 +1,12 @@
 " ~/.vim/config/mappings.vim
 " Niko Kivelä <niko tovrleaf com>
 
-" LustyExplorer
-nmap <silent> <leader>l :LustyFilesystemExplorer<CR>
-nmap <silent> <leader>L :LustyFilesystemExplorerFromHere<CR>
+" CtrlP
+let g:ctrlp_working_path_mode = 'ra'
+" CtrlP in find file mode
+nmap <silent> <leader>l :CtrlP<CR>
+" Files, Buffers and MRU files at the same time
+nmap <silent> <leader>L :CtrlPMixed<CR>
 
 " LustyJuggler
 let g:LustyJugglerShowKeys = 'a'
