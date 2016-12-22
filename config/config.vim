@@ -6,7 +6,6 @@ execute pathogen#infect()
 " Backspace over autoindent, line breaks and start of insert mode
 set backspace=indent,eol,start
 
-syntax on
 filetype on
 filetype indent on
 filetype plugin indent on
@@ -105,3 +104,5 @@ source ~/.vim-git/config/mappings.vim
 source ~/.vim-git/config/plugins.vim
 " Editor config
 source ~/.vim-git/config/editor.vim
+
+syntax on
