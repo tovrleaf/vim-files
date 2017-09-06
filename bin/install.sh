@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
-cd $HOME
+cd "$HOME/.vim"
 
 for f in autoload \
     bundle \
     colors \
     plugin \
     ; do
-    ln -s ~/.vim-git/$f ~/.vim/ 2>/dev/null || true
+    mkdir "$f" 2>/dev/null || true
 done
 
-cd .vim-git/bundle
+cd bundle
 
 for r in \
+    tpope/vim-pathogen \
     clojure-emacs/cider-nrepl \
     guns/vim-clojure-highlight \
     guns/vim-clojure-static \

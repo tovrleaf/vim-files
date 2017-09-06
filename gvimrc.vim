@@ -2,7 +2,7 @@
 " Niko Kivelä <niko tovrleaf com>
 
 " Config
-source ~/.vim-git/config/config.vim
+source ~/.vim/config/config.vim
 
 " Cursor
 set cursorline

@@ -97,13 +97,13 @@ let c_comment_strings=1 " Highlight strings inside C comments
 set visualbell          " Set visualbell instead of beeping
 
 " Mappings
-source ~/.vim-git/config/mappings.vim
+source ~/.vim/config/mappings.vim
 " Statusline manipulation
-"source ~/.vim-git/config/statusline.vim
+"source ~/.vim/config/statusline.vim
 " Plugins config
-source ~/.vim-git/config/plugins.vim
+source ~/.vim/config/plugins.vim
 " Editor config
-source ~/.vim-git/config/editor.vim
+source ~/.vim/config/editor.vim
 
 syntax on
 

@@ -1,4 +1,4 @@
 " ~/.vimrc
 " Niko Kivelä <niko tovrleaf com>
 
-source ~/.vim-git/config/config.vim
+source ~/.vim/config/config.vim

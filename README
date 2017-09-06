@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
-git clone git://github.com/tovrleaf/vim-files.git ~/.vim-git
+git clone git://github.com/tovrleaf/vim-files.git ~/.vim
 
-echo source ~/.vim-git/vimrc.vim >> ~/.vimrc
-echo source ~/.vim-git/gvimrc.vim >> ~/.gvimrc
+echo source ~/.vim/vimrc.vim >> ~/.vimrc
+echo source ~/.vim/gvimrc.vim >> ~/.gvimrc
 
-. ~/.vim-git/bin/install.sh
+. ~/.vim/bin/install.sh
 
 # Neovim
 
 ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
+
+# Fonts
+
+./bundle/fonts/install.sh
