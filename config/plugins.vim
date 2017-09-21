@@ -52,3 +52,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" pangloss/vim-javascript.git
+let g:javascript_plugin_jsdoc = 1
+set conceallevel=1

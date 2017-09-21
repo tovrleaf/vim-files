@@ -27,6 +27,7 @@ for r in \
     vim-airline/vim-airline-themes \
     powerline/fonts \
     kien/ctrlp.vim \
+    pangloss/vim-javascript \
     ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
