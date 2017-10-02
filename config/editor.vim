@@ -21,3 +21,4 @@ set showtabline=1   " No page labelso
 " Filetype settings
 autocmd Filetype sh setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
