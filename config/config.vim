@@ -104,6 +104,8 @@ source ~/.vim/config/mappings.vim
 source ~/.vim/config/plugins.vim
 " Editor config
 source ~/.vim/config/editor.vim
+" Aliases
+source ~/.vim/config/aliases.vim
 
 syntax on
 
