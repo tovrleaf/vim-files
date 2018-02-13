@@ -6,7 +6,7 @@
 noremap <silent> <C-n> :bnext<CR>
 noremap <silent> <C-p> :bprev<CR>
 " show buffer with ,,
-noremap <silent> ,, :buffers<CR>
+"noremap <silent> ,, :buffers<CR>
 "noremap <silent> <C-n> :tabnext<CR>
 "noremap <silent> <C-p> :tabprev<CR>
 
