@@ -7,6 +7,7 @@ let g:ctrlp_working_path_mode = 'ra'
 nmap <silent> <leader>l :CtrlP<CR>
 " Files, Buffers and MRU files at the same time
 nmap <silent> <leader>L :CtrlPMixed<CR>
+nmap <silent> ,, :CtrlPBuffer<CR>
 
 " Better Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
