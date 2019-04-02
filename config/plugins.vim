@@ -8,11 +8,6 @@ nmap <silent> <leader>l :CtrlP<CR>
 " Files, Buffers and MRU files at the same time
 nmap <silent> <leader>L :CtrlPMixed<CR>
 
-" LustyJuggler
-let g:LustyJugglerShowKeys = 'a'
-nmap <silent> ,, :LustyJuggler<CR>
-nmap <silent> <TAB> :LustyJugglePrevious<CR>
-
 " Better Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound

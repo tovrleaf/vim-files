@@ -22,7 +22,6 @@ for r in \
     tpope/vim-fireplace \
     tomasr/molokai \
     tpope/vim-classpath \
-    vim-scripts/LustyJuggler \
     vim-airline/vim-airline \
     vim-airline/vim-airline-themes \
     powerline/fonts \
