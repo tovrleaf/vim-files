@@ -31,5 +31,5 @@ for r in \
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
     test -d $d && pushd $d >/dev/null && git pull &&  popd >/dev/null
-    ! test -d $d &&  git clone git@github.com:$r.git
+    ! test -d $d &&  git clone https://github.com/$r.git
 done
