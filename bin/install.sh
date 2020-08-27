@@ -27,9 +27,12 @@ for r in \
     powerline/fonts \
     kien/ctrlp.vim \
     pangloss/vim-javascript \
+    tpope/vim-surround \
     ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
     test -d $d && pushd $d >/dev/null && git pull &&  popd >/dev/null
     ! test -d $d &&  git clone https://github.com/$r.git
 done
+
+vim -u NONE -c "helptags surround/doc" -c q
