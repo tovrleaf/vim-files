@@ -71,7 +71,7 @@ set wildmode=longest,list:full  " Helps wildmenu auto-completion
 set listchars=tab:⏤⇢,trail:⇢
 set list
 set complete=.,w,b,u
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$/$/e
 
 " Searhing and hilighlights
 set hlsearch        " Highlight searches
