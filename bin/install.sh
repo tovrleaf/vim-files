@@ -13,21 +13,22 @@ done
 cd bundle
 
 for r in \
-    tpope/vim-pathogen \
     clojure-emacs/cider-nrepl \
     guns/vim-clojure-highlight \
     guns/vim-clojure-static \
+    kien/ctrlp.vim \
     kien/rainbow_parentheses.vim \
     mfukar/robotframework-vim \
-    tpope/vim-fireplace \
+    pangloss/vim-javascript \
+    powerline/fonts \
     tomasr/molokai \
     tpope/vim-classpath \
+    tpope/vim-fireplace \
+    tpope/vim-pathogen \
+    tpope/vim-surround \
     vim-airline/vim-airline \
     vim-airline/vim-airline-themes \
-    powerline/fonts \
-    kien/ctrlp.vim \
-    pangloss/vim-javascript \
-    tpope/vim-surround \
+    zxqfl/tabnine-vim \
     ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"

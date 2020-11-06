@@ -52,3 +52,6 @@ let g:airline_symbols.linenr = ''
 " pangloss/vim-javascript.git
 let g:javascript_plugin_jsdoc = 1
 set conceallevel=0
+
+" TabNine
+set rtp+=~/.vim/bundle/tabnine-vim
