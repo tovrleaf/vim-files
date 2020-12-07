@@ -18,6 +18,7 @@ set showcmd         " Show incomplete cmds down the bottom
 set showmatch       " Automatically show matching brackets
 set matchtime=2     " Show matching parents after .2 seconds, no .5sec noinsertmode
 let mapleader = ','
+let maplocalleader = '-'
 
 "GUI
 set guifont=Roboto\ Mono\ Medium\ for\ Powerline:h15

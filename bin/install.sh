@@ -16,6 +16,7 @@ for r in \
     clojure-emacs/cider-nrepl \
     guns/vim-clojure-highlight \
     guns/vim-clojure-static \
+    jupyter-vim/jupyter-vim \
     kien/ctrlp.vim \
     kien/rainbow_parentheses.vim \
     mfukar/robotframework-vim \
