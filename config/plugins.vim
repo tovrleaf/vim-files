@@ -61,4 +61,3 @@ set rtp+=~/.vim/bundle/tabnine-vim
 "set pyxversion=3
 "let g:python_host_prog = '/usr/local/bin/python3'
 nnoremap <silent> <leader>J :JupyterConnect<CR>
-

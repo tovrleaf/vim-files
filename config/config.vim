@@ -69,7 +69,7 @@ set wildmenu                    " Enchanced ed commands completion
 set wildmode=longest,list:full  " Helps wildmenu auto-completion
 
 " Unprintable characters and whitespaces
-set listchars=tab:⏤⇢,trail:⇢
+set listchars=tab:⏤⇢,trail:⇢,eol:$
 set list
 set complete=.,w,b,u
 autocmd BufWritePre * :%s/\s\+$/$/e
