@@ -29,7 +29,6 @@ for r in \
     tpope/vim-surround \
     vim-airline/vim-airline \
     vim-airline/vim-airline-themes \
-    zxqfl/tabnine-vim \
     ; do
     d=`echo $r | sed 's|^.*/||'`
     echo "[$r]"
