@@ -99,8 +99,6 @@ set visualbell          " Set visualbell instead of beeping
 
 " Mappings
 source ~/.vim/config/mappings.vim
-" Statusline manipulation
-"source ~/.vim/config/statusline.vim
 " Plugins config
 source ~/.vim/config/plugins.vim
 " Editor config
