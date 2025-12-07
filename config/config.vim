@@ -21,7 +21,7 @@ let mapleader = ','
 let maplocalleader = '-'
 
 "GUI
-set guifont=Roboto\ Mono\ Medium\ for\ Powerline:h15
+set guifont=Roboto_Mono_Medium_for_Powerline:h15
 set number          " Show linenumbers
 set ruler
 set rulerformat=%l/%L(%p%%),%c
@@ -62,7 +62,7 @@ if exists('+colorcolumn')
 endif
 
 " Hilight anything over 120 characters
-"match Todo '\%120v.*'
+match Todo '\%120v.*'
 
 " Autocompletion behaviour
 set wildmenu                    " Enchanced ed commands completion
@@ -80,7 +80,7 @@ set incsearch       " Start searching right away
 set noignorecase    " Do not ignorecase when searching pattern
 set iskeyword+=_    " No underscore as word delimiter, helps locating variables
 set wrapscan        " Wrap search around EOF
-"
+
 " Highlight toggle
 nmap <Leader>c :silent :nohlsearch<CR>
 
