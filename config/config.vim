@@ -1,7 +1,28 @@
 " ~/.vim/config/config.vim
 " Niko Kivelä <niko tovrleaf com>
 
-execute pathogen#infect()
+" https://github.com/junegunn/vim-plug
+":PlugInstall to install the plugins
+":PlugUpdate to install or update the plugins
+":PlugDiff to review the changes from the last update
+":PlugClean to remove plugins no longer in the list
+call plug#begin()
+Plug 'clojure-emacs/cider-nrepl'
+Plug 'guns/vim-clojure-highlight'
+Plug 'guns/vim-clojure-static'
+Plug 'jupyter-vim/jupyter-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'mfukar/robotframework-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'powerline/fonts'
+Plug 'tomasr/molokai'
+Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
 
 " Backspace over autoindent, line breaks and start of insert mode
 set backspace=indent,eol,start
