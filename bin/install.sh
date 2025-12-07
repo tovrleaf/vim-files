@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$HOME/.vim"
+cd "~/.vim"
 
 for f in autoload \
     bundle \
