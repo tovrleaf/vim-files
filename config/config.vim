@@ -6,7 +6,7 @@
 ":PlugUpdate to install or update the plugins
 ":PlugDiff to review the changes from the last update
 ":PlugClean to remove plugins no longer in the list
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 Plug 'clojure-emacs/cider-nrepl'
 Plug 'guns/vim-clojure-highlight'
 Plug 'guns/vim-clojure-static'
