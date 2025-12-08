@@ -1,25 +1,44 @@
 " ~/.vim/config/editor.vim
 " Niko Kivelä <niko tovrleaf com>
 
-" Indenting
-set autoindent      " Auto ident what I've indented myself
-set cindent         " Turn off c indenting
-set smartindent     " Do not auto indent when starting newline
-set smarttab        " Let vim me do the indenting
+" ============================================================================
+" INDENTING
+" ============================================================================
+" Auto indent what I've indented myself
+set autoindent
+" Turn off c indenting
+set cindent
+" Do not auto indent when starting newline
+set smartindent
+" Let vim do the indenting
+set smarttab
 
-" Tabbing
-set expandtab       " Insert spaces whenever tab key is pressed
-set shiftwidth=4    " Set the number of spaces inserted for indentation
-set softtabstop=0   " Number of columns vim uses when tab is pressed
-set tabstop=4       " How many columns tab counts for
+" ============================================================================
+" TABBING
+" ============================================================================
+" Insert spaces whenever tab key is pressed
+set expandtab
+" Set the number of spaces inserted for indentation
+set shiftwidth=2
+" Number of columns vim uses when tab is pressed
+set softtabstop=0
+" How many columns tab counts for
+set tabstop=2
 
-" Visual
-set laststatus=2    " Have status line always
-set textwidth=0     " Disable maximum width of text that can be inserted
-set showtabline=1   " No page labelso
+" ============================================================================
+" VISUAL
+" ============================================================================
+" Have status line always
+set laststatus=2
+" Disable maximum width of text that can be inserted
+set textwidth=0
+" Show tab bar only when there are at least 2 tabs
+set showtabline=1
 
-" Filetype settings
-autocmd Filetype sh setlocal ts=2 sts=2 sw=2
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype py setlocal ts=4 sts=4 sw=4
+" ============================================================================
+" FILETYPE SETTINGS
+" ============================================================================
+augroup filetype_settings
+  au!
+  autocmd Filetype py setlocal ts=4 sts=4 sw=4
+augroup END
