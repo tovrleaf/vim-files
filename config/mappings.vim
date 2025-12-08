@@ -10,6 +10,9 @@ noremap <silent> <C-p> :bprev<CR>
 "noremap <silent> <C-n> :tabnext<CR>
 "noremap <silent> <C-p> :tabprev<CR>
 
+" Highlight toggle, command c$
+nmap <Leader>c :silent :nohlsearch<CR>
+
 " Toggle line numbers
 nnoremap <F7> :set number!<CR>
 
