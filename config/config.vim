@@ -94,32 +94,8 @@ set t_Co=256
 set guifont=Roboto_Mono_Medium_for_Powerline:h15
 
 " ============================================================================
-" EDITING BEHAVIOR
+" AUTOCOMPLETION
 " ============================================================================
-" Backspace over autoindent, line breaks and start of insert mode
-set backspace=indent,eol,start
-" Start in command mode
-set noinsertmode
-
-" Text wrapping and line length
-set wrap
-set textwidth=79
-" Allow gq, autoinsert comment leader, recognize lists,
-" don't break one-letter word
-set formatoptions=qrn1
-
-" Visual guides for line length
-if exists('+colorcolumn')
-  " Displays a vertical line at column 80
-  set colorcolumn=80
-endif
-
-" Whitespace display
-" Make invisible whitespace characters visible
-set list
-set listchars=tab:⏤⇢,trail:⇢,eol:$
-
-" Autocompletion
 " Enables enhanced command-line completion with a visual menu
 set wildmenu
 " Helps wildmenu auto-completion
@@ -160,18 +136,6 @@ set whichwrap+=h,l
 " ============================================================================
 " AUTOCOMMANDS
 " ============================================================================
-augroup whitespace
-  au!
-  " Automatically remove trailing whitespace from all lines when save
-  autocmd BufWritePre * :%s/\s\+$//e
-augroup END
-
-augroup line_length_warning
-  au!
-  " Highlight anything over 120 characters
-  autocmd BufWinEnter * call matchadd('Todo', '\%>120v.*')
-augroup END
-
 augroup line_return
   au!
   " Make sure Vim returns to the same line when you reopen a file
