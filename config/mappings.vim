@@ -11,7 +11,7 @@ noremap <silent> <C-n> :bnext<CR>
 noremap <silent> <C-p> :bprev<CR>
 
 " Show buffer with ,,
-noremap <silent> ,, :buffers<CR>
+"noremap <silent> ,, :buffers<CR>
 
 " Tab navigation (alternative, currently disabled)
 "noremap <silent> <C-n> :tabnext<CR>
