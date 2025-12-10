@@ -54,8 +54,3 @@ let g:javascript_plugin_jsdoc = 1
 set conceallevel=0
 
 let g:airline_section_z = '%p%%%l/%L,%c'
-
-" Jupyter
-"set pyxversion=3
-"let g:python_host_prog = '/usr/local/bin/python3'
-nnoremap <silent> <leader>J :JupyterConnect<CR>
