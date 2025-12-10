@@ -10,10 +10,8 @@
 " :PlugDiff to review the changes from the last update
 " :PlugClean to remove plugins no longer in the list
 call plug#begin('~/.vim/plugged')
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'mfukar/robotframework-vim'
-Plug 'pangloss/vim-javascript'
 Plug 'powerline/fonts'
 Plug 'tomasr/molokai'
 Plug 'tpope/vim-classpath'
