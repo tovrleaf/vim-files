@@ -30,20 +30,6 @@ let g:airline_theme='badwolf'
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
 
-" Initialize symbols dictionary
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" Powerline symbols (preferred)
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
 " Custom status line format
 let g:airline_section_z = '%p%%%l/%L,%c'
 
