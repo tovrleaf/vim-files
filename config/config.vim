@@ -10,7 +10,8 @@
 " :PlugDiff to review the changes from the last update
 " :PlugClean to remove plugins no longer in the list
 call plug#begin('~/.vim/plugged')
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'powerline/fonts'
 Plug 'tomasr/molokai'

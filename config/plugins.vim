@@ -2,17 +2,17 @@
 " Niko Kivelä <niko tovrleaf com>
 
 " ============================================================================
-" CTRLP - https://github.com/kien/ctrlp.vim
+" FZF - https://github.com/junegunn/fzf.vim
 " ============================================================================
-" Set working path mode to repository root or current directory
-let g:ctrlp_working_path_mode = 'ra'
+" FZF window settings
+let g:fzf_layout = { 'down': '~40%' }
 
-" CtrlP in find file mode
-nmap <silent> <leader>l :CtrlP<CR>
-" Files, Buffers and MRU files at the same time
-nmap <silent> <leader>L :CtrlPMixed<CR>
+" Files
+nmap <silent> <leader>l :GFiles<CR>
+" History (MRU files)
+nmap <silent> <leader>L :History<CR>
 " Buffer list
-nmap <silent> ,, :CtrlPBuffer<CR>
+nmap <silent> ,, :Buffers<CR>
 
 " ============================================================================
 " RAINBOW PARENTHESES - https://github.com/kien/rainbow_parentheses.vim
