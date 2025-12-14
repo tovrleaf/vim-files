@@ -15,19 +15,12 @@ nmap <silent> <leader>L :History<CR>
 nmap <silent> ,, :Buffers<CR>
 
 " ============================================================================
-" RAINBOW PARENTHESES - https://github.com/kien/rainbow_parentheses.vim
+" RAINBOW - https://github.com/luochen1990/rainbow
 " ============================================================================
-augroup rainbow_parentheses
-  au!
-  au VimEnter * RainbowParenthesesToggle
-  au VimEnter * RainbowParenthesesLoadRound
-  au VimEnter * RainbowParenthesesLoadSquare
-  au VimEnter * RainbowParenthesesLoadBraces
-  au VimEnter * RainbowParenthesesLoadChevrons
-augroup END
+let g:rainbow_active = 1
 
 " Toggle rainbow parentheses
-nmap <silent> <leader>r :RainbowParenthesesToggleAll<CR>
+nmap <silent> <leader>r :RainbowToggle<CR>
 
 " ============================================================================
 " AIRLINE - https://github.com/vim-airline/vim-airline

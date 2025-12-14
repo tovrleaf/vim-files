@@ -12,7 +12,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'luochen1990/rainbow'
 Plug 'powerline/fonts'
 Plug 'tomasr/molokai'
 Plug 'tpope/vim-surround'
