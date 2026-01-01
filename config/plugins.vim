@@ -47,7 +47,16 @@ let g:vim_markdown_new_list_item_indent = 2
 " ============================================================================
 " NEO-TREE.NVIM - https://github.com/nvim-neo-tree/neo-tree.nvim
 " ============================================================================
-nnoremap / :Neotree toggle=true reveal=true source=filesystem position=left action=show<cr>
+" Configure neo-tree width
+lua << EOF
+require("neo-tree").setup({
+  close_if_last_window = true,
+  window = {
+    width = 30,
+  }
+})
+EOF
+nnoremap / :Neotree filesystem reveal left toggle show<CR>
 
 " ============================================================================
 " GENERAL PLUGIN SETTINGS
