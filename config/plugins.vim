@@ -44,6 +44,10 @@ let g:vim_markdown_json_frontmatter = 1
 let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_new_list_item_indent = 2
 
+" ============================================================================
+" NEO-TREE.NVIM - https://github.com/nvim-neo-tree/neo-tree.nvim
+" ============================================================================
+nnoremap / :Neotree toggle=true reveal=true source=filesystem position=left action=show<cr>
 
 " ============================================================================
 " GENERAL PLUGIN SETTINGS

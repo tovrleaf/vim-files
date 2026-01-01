@@ -10,17 +10,30 @@
 " :PlugDiff to review the changes from the last update
 " :PlugClean to remove plugins no longer in the list
 call plug#begin('~/.vim/plugged')
+" Fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" Rainbow
 Plug 'luochen1990/rainbow'
+" Powerline
 Plug 'powerline/fonts'
+" Molokai
 Plug 'tomasr/molokai'
+" Vim-surround
 Plug 'tpope/vim-surround'
+" Vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Vim-tmux-navigator
 Plug 'christoomey/vim-tmux-navigator'
+" Vim-markdown
 Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
+Plug 'preservim/vim-markdown',
+" Neo-tree with specific branch and dependencies
+Plug 'nvim-neo-tree/neo-tree.nvim',
+Plug 'nvim-lua/plenary.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 call plug#end()
 
 " ============================================================================
