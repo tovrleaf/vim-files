@@ -11,6 +11,7 @@ nmap remtab :%s/\s\+$
 " DIRECTORY NAVIGATION
 " ============================================================================
 " Change directory to that of current file
-nmap cdc :cd%:p:h<CR>
+noremap <leader>cdc :cd%:p:h<CR>
 " Change local directory to that of current file
-nmap lcd :lcd%:p:h<CR>
+"nmap lcd :lcd%:p:h<CR>
+nnoremap <leader>lcd :lcd%:p:h<CR>

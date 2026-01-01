@@ -34,6 +34,18 @@ let g:Powerline_symbols='unicode'
 let g:airline_section_z = '%p%%%l/%L,%c'
 
 " ============================================================================
+" VIM-MARKDOWN - https://github.com/preservim/vim-markdown
+" ============================================================================
+
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_toml_frontmatter = 1
+let g:vim_markdown_json_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_new_list_item_indent = 2
+
+
+" ============================================================================
 " GENERAL PLUGIN SETTINGS
 " ============================================================================
 " Disable text concealing
