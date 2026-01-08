@@ -10,7 +10,7 @@ let g:fzf_layout = { 'down': '~40%' }
 " Files
 nmap <silent> <leader>l :GFiles<CR>
 " History (MRU files)
-nmap <silent> <leader>L :History<CR>
+nmap <silent> <leader>L :Files<CR>
 " Buffer list
 nmap <silent> ,, :Buffers<CR>
 
